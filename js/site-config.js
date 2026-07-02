@@ -7,7 +7,7 @@ window.SITE_CONFIG = {
     name: 'Vincent Martinez',
     email: 'vincentmartinez9410@gmail.com',
     logoInitials: 'VM',
-    siteUrl: 'https://jimmythegod100.github.io/web-portfolio/',
+    siteUrl: 'https://jimmythegod100.github.io/vincent-web-portfolio/',
     formSubject: 'Website inquiry — Vincent Martinez'
   },
   integrations: {

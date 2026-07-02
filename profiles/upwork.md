@@ -33,7 +33,7 @@ PROCESS
 
 If you need a simple, affordable site and don't need a big agency, I'd love to hear from you.
 
-Portfolio: https://jimmythegod100.github.io/web-portfolio/
+Portfolio: https://jimmythegod100.github.io/vincent-web-portfolio/
 Email: vincentmartinez9410@gmail.com
 ```
 
@@ -55,7 +55,7 @@ $15–25/hr (appropriate for beginner / student freelancer)
 
 ## Live Portfolio
 
-**https://jimmythegod100.github.io/web-portfolio/**
+**https://jimmythegod100.github.io/vincent-web-portfolio/**
 
 ## Portfolio Items (use as style examples — label honestly on Upwork)
 

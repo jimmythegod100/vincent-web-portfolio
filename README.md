@@ -1,6 +1,6 @@
-# Web Portfolio — Vincent Martinez
+# Vincent's Web Portfolio — Vincent Martinez
 
-**Live site:** https://jimmythegod100.github.io/web-portfolio/
+**Live site:** https://jimmythegod100.github.io/vincent-web-portfolio/
 
 Honest portfolio for a 16-year-old Wix website builder — logos, social media setup, and simple front-end sites at beginner-friendly rates.
 
@@ -20,6 +20,10 @@ Honest portfolio for a 16-year-old Wix website builder — logos, social media s
 - **Email:** vincentmartinez9410@gmail.com
 - **Form:** FormSubmit → same email (one-time activation on first submission)
 
+## Integrations (Calendly, social, payments)
+
+Edit `js/site-config.js` — see **docs/INTEGRATIONS.md** for copy-paste examples.
+
 ## Platform copy
 
 Ready to paste into client platforms:
@@ -31,8 +35,13 @@ Ready to paste into client platforms:
 ## Preview locally
 
 ```bash
-cd ~/Projects/web-portfolio
+cd ~/Projects/vincent-web-portfolio
 python3 -m http.server 8080
 ```
 
 Open http://localhost:8080
+
+## Process docs
+
+- `docs/PROCESS.md` — full build/deploy workflow
+- `docs/INTEGRATIONS.md` — add Calendly, social, payment links job-by-job

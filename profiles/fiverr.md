@@ -1,6 +1,6 @@
 # Fiverr Profile — Copy & Paste Ready (Honest version for Vincent)
 
-**Live portfolio:** https://jimmythegod100.github.io/web-portfolio/
+**Live portfolio:** https://jimmythegod100.github.io/vincent-web-portfolio/
 
 ## Gig Title Options
 
@@ -51,7 +51,7 @@ Wix · Canva · Contact forms · Google Maps
 💬 COMMUNICATION
 I'm friendly, patient, and I'll tell you straight if your project needs someone more advanced. Message me before ordering!
 
-Portfolio: https://jimmythegod100.github.io/web-portfolio/
+Portfolio: https://jimmythegod100.github.io/vincent-web-portfolio/
 ```
 
 ---

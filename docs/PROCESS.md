@@ -2,6 +2,15 @@
 
 Repeatable workflow for GitHub Pages portfolios (used for Vincent Martinez, July 2026).
 
+## Naming convention
+
+| Client | GitHub repo | Local folder |
+|--------|-------------|--------------|
+| Vincent Martinez | `vincent-web-portfolio` | `~/Projects/vincent-web-portfolio` |
+| Next client | `clientname-web-portfolio` | `~/Projects/clientname-web-portfolio` |
+
+GitHub repo names cannot contain spaces or apostrophes — use `clientname-web-portfolio` as the slug. Display title in README can say "Client's Web Portfolio."
+
 ## What gets built
 
 - Single-page static site: HTML + CSS + JS
@@ -13,15 +22,15 @@ Repeatable workflow for GitHub Pages portfolios (used for Vincent Martinez, July
 
 | URL type | Example | Who sees it |
 |----------|---------|-------------|
-| **GitHub Pages (default)** | `jimmythegod100.github.io/web-portfolio` | Your GitHub **account username** — not the client's name |
+| **GitHub Pages (default)** | `jimmythegod100.github.io/vincent-web-portfolio` | Your GitHub **account username** — not the client's name |
 | **Custom domain (optional)** | `vincentmartinez.com` | Professional branded link — DNS points to GitHub |
 
 The site **files** live in GitHub; the **public link** can stay on github.io or use a purchased domain later.
 
 ## New client checklist
 
-1. Copy repo or duplicate `web-portfolio` folder
-2. Edit `js/site-config.js` (name, email, URLs)
+1. Run `scripts/bootstrap-new-client.sh clientname-web-portfolio` or duplicate `vincent-web-portfolio`
+2. Edit `js/site-config.js` (name, email, siteUrl, integrations)
 3. Replace `images/about/` headshot, update copy in `index.html`
 4. Match honesty level to client skill (see Vincent revision: Wix beginner vs agency)
 5. Create GitHub repo → push → enable Pages (Settings → Pages → branch `main` / root)
@@ -31,13 +40,15 @@ The site **files** live in GitHub; the **public link** can stay on github.io or 
 
 ## Integrations (js/site-config.js)
 
+See **docs/INTEGRATIONS.md** for job-by-job examples ("add Stripe link", "add Instagram", etc.).
+
 | Field | When to fill | Where it appears |
 |-------|--------------|------------------|
 | `calendlyUrl` | Client has Calendly | `#book` section + nav "Book a call" |
 | `social.*` | Profile URLs | Footer + contact area |
 | `payments.*` | Stripe/PayPal/Venmo links | Below contact form |
 
-Empty = section hidden automatically.
+Empty = section hidden automatically. **No pre-setup required** — fill URLs when the client provides them.
 
 ## Agent skill
 
@@ -46,4 +57,4 @@ Tell any agent: *"Use the static-portfolio-github-pages skill"* to rebuild witho
 
 ## Repo
 
-https://github.com/jimmythegod100/web-portfolio
+https://github.com/jimmythegod100/vincent-web-portfolio

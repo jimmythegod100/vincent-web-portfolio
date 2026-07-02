@@ -24,16 +24,16 @@ WHAT I DON'T DO (being honest)
 
 I'm patient, communicate clearly, and won't take a job that's over my head. Great for first websites and tight budgets.
 
-Portfolio: https://jimmythegod100.github.io/web-portfolio/
+Portfolio: https://jimmythegod100.github.io/vincent-web-portfolio/
 Email: vincentmartinez9410@gmail.com
 ```
 
 ## Live Portfolio
 
-**https://jimmythegod100.github.io/web-portfolio/**
+**https://jimmythegod100.github.io/vincent-web-portfolio/**
 
 ## Featured Section
-Add to Featured: **https://jimmythegod100.github.io/web-portfolio/** — Title: "Wix Website Builder — Portfolio"
+Add to Featured: **https://jimmythegod100.github.io/vincent-web-portfolio/** — Title: "Wix Website Builder — Portfolio"
 
 ## Experience Entry (if freelancing)
 
