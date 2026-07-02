@@ -60,6 +60,7 @@
         <li><a href="#services">Services</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#faq">FAQ</a></li>
+        <li id="nav-book" hidden><a href="#book">Book a call</a></li>
         <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
       </ul>
     </nav>
@@ -442,6 +443,17 @@
       </div>
     </section>
 
+    <section class="section section-alt" id="book" hidden>
+      <div class="container">
+        <div class="section-header center">
+          <p class="eyebrow">Schedule</p>
+          <h2>Book a free intro call</h2>
+          <p>Pick a time that works — no back-and-forth emails required.</p>
+        </div>
+        <div id="calendly-embed" class="calendly-embed"></div>
+      </div>
+    </section>
+
     <section class="section section-cta" id="contact">
       <div class="container cta-grid">
         <div class="cta-content">
@@ -462,6 +474,8 @@
               <strong>Open for small projects</strong>
             </div>
           </div>
+          <div id="contact-social" class="social-links" hidden aria-label="Social media"></div>
+          <div id="payment-links" class="payment-links" hidden aria-label="Payment options"></div>
         </div>
         <form class="contact-form" action="https://formsubmit.co/vincentmartinez9410@gmail.com" method="POST">
           <input type="hidden" name="_subject" value="Website inquiry — Vincent Martinez">
@@ -518,11 +532,14 @@
         <a href="#pricing">Pricing</a>
         <a href="#contact">Contact</a>
       </div>
+      <div id="footer-social" class="social-links footer-social" hidden aria-label="Social media"></div>
       <p class="footer-copy">&copy; <span id="year">2026</span> Vincent Martinez. All rights reserved.</p>
       <p class="footer-note">Built with care · Honest scope · Wix-focused</p>
     </div>
   </footer>
 
+  <script src="js/site-config.js"></script>
+  <script src="js/integrations.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
