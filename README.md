@@ -90,7 +90,7 @@ Take these screenshots from your deployed site:
 
 ## Next Steps
 
-- [ ] Deploy to Netlify/Vercel/GitHub Pages
+- [x] Deploy to Netlify/Vercel/GitHub Pages — live at https://jimmythegod100.github.io/web-portfolio/
 - [ ] Replace demo projects with real work as you complete projects
 - [ ] Add Google Analytics (optional: paste GA script in `<head>` of index.html)
 - [ ] Connect a custom domain (yourname.com) via Netlify/Vercel DNS settings
