@@ -34,11 +34,15 @@ HOW I WORK
 
 Currently accepting new projects. DM me or email andrewjamesmartinez91@gmail.com — I respond within 24 hours.
 
-Portfolio: [ADD YOUR LIVE URL AFTER DEPLOYING]
+Portfolio: https://jimmythegod100.github.io/web-portfolio/
 ```
 
+## Live Portfolio
+
+**https://jimmythegod100.github.io/web-portfolio/**
+
 ## Featured Section
-Add your portfolio URL once deployed. Suggested title: "Web Development Portfolio — Recent Projects"
+Add to Featured: **https://jimmythegod100.github.io/web-portfolio/** — Suggested title: "Web Development Portfolio — Recent Projects"
 
 ## Experience Entry (if freelancing)
 

@@ -94,4 +94,4 @@ Take these screenshots from your deployed site:
 - [ ] Replace demo projects with real work as you complete projects
 - [ ] Add Google Analytics (optional: paste GA script in `<head>` of index.html)
 - [ ] Connect a custom domain (yourname.com) via Netlify/Vercel DNS settings
-- [ ] Update profile files with your live portfolio URL
+- [x] Update profile files with your live portfolio URL

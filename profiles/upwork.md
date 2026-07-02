@@ -63,6 +63,12 @@ $45–65/hr (adjust based on your market)
 - Web Development
 - Web & Mobile Design
 
+## Live Portfolio
+
+**https://jimmythegod100.github.io/web-portfolio/**
+
+Use this URL in your Upwork profile, proposals, and portfolio entries.
+
 ## Portfolio Items (add these as Upwork portfolio entries)
 
 ### 1. Bloom Botanicals — E-commerce Store
