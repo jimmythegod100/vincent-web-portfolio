@@ -1,32 +1,32 @@
-# Fiverr Profile — Copy & Paste Ready
+# Fiverr Profile — Copy & Paste Ready (Honest version for Vincent)
 
 **Live portfolio:** https://jimmythegod100.github.io/web-portfolio/
 
 ## Gig Title Options
 
-**Gig 1 — Business Website**
+**Gig 1 — Wix Business Site**
 ```
-I will build a professional responsive business website for your company
-```
-
-**Gig 2 — Landing Page**
-```
-I will design and build a high converting landing page for your business
+I will build a simple Wix website for your small business
 ```
 
-**Gig 3 — E-commerce**
+**Gig 2 — Logo**
 ```
-I will create a complete e-commerce website with payment integration
-```
-
-**Gig 4 — WordPress**
-```
-I will build a custom WordPress website with SEO and mobile optimization
+I will design a simple logo for your business or brand
 ```
 
-**Gig 5 — Redesign**
+**Gig 3 — Social Media**
 ```
-I will redesign and modernize your outdated website
+I will connect your social media to your Wix website
+```
+
+**Gig 4 — Landing Page**
+```
+I will create a one page Wix landing page for your promotion
+```
+
+**Gig 5 — Wix Updates**
+```
+I will update or fix your existing Wix website
 ```
 
 ---
@@ -34,108 +34,91 @@ I will redesign and modernize your outdated website
 ## Seller Description (About)
 
 ```
-👋 Hi, I'm Vincent — a web developer with 35+ websites delivered for restaurants, agencies, coaches, and small businesses across the US.
+👋 Hi, I'm Vincent — I'm 16 and I build websites on Wix for small businesses and creators.
 
-I don't just make pretty sites. I build websites that load fast, look great on phones, and turn visitors into paying customers.
+I'm honest about my experience: I'm not a senior developer. I use Wix's editor to create clean, mobile-friendly sites — layouts, contact forms, photos, and social media links. I can also make simple logos.
 
 ✅ WHAT YOU GET
-• Clean, modern design tailored to your brand
-• Fully responsive (mobile, tablet, desktop)
-• Fast loading (90+ PageSpeed scores)
-• SEO basics included (meta tags, sitemap, structure)
-• Contact forms that actually work
-• Full ownership — you get all files and access
+• A real Wix site you can view on phones and computers
+• Your text and photos placed professionally
+• Social media buttons that link to your profiles
+• A simple logo if you need one
+• Walkthrough on how to make small edits yourself
 
-🛠 TECHNOLOGIES
-WordPress · HTML/CSS/JS · React · Webflow · Shopify · Stripe
-
-📦 PACKAGES AVAILABLE
-Basic — 1-3 page site, perfect for startups
-Standard — Up to 8 pages with custom design
-Premium — Full e-commerce or complex builds
+🛠 TOOLS
+Wix · Canva · Contact forms · Google Maps
 
 💬 COMMUNICATION
-I respond within a few hours and send progress updates so you're never left wondering. Revisions included until you're 100% happy.
+I'm friendly, patient, and I'll tell you straight if your project needs someone more advanced. Message me before ordering!
 
-Message me before ordering and tell me about your project — I'll confirm the right package and timeline for you.
+Portfolio: https://jimmythegod100.github.io/web-portfolio/
 ```
 
 ---
 
 ## Gig Descriptions
 
-### Basic Package — Starter Website ($800)
+### Basic — Simple Wix Site ($50–$100)
 ```
-Perfect for solopreneurs, freelancers, and local businesses getting online for the first time.
+One-page or very simple Wix website.
 
 INCLUDES:
-✓ 1–3 page responsive website
-✓ Mobile-friendly design
-✓ Contact form
-✓ Basic SEO setup
-✓ Social media links
+✓ 1 page on Wix
+✓ Mobile-friendly layout
+✓ Contact form or email button
+✓ Social media icon links
+✓ 1 round of revisions
+
+You provide: business name, text, and photos (or I use placeholders while we work).
+Wix hosting plan is paid separately by you to Wix.
+```
+
+### Standard — Small Business Site ($100–$200)
+```
+Multi-page Wix site for a local business or creator.
+
+INCLUDES:
+✓ Up to 5 pages
+✓ Simple logo design
+✓ Social links connected
+✓ Google Maps embed (if needed)
 ✓ 2 rounds of revisions
-✓ 5–7 day delivery
 
-You'll need to provide: logo, text content, and any images. I can help with placeholder content if needed.
-
-Order the Basic package to get started, or message me first if you have questions!
+Good for: salons, tutors, food trucks, clubs, side hustles.
 ```
 
-### Standard Package — Business Website ($1,800)
+### Premium — Site + Extras ($200–$300)
 ```
-For growing businesses that need a professional online presence with room to expand.
+More pages or add-ons on Wix.
 
 INCLUDES:
-✓ Up to 8 custom-designed pages
-✓ Mobile-first responsive design
-✓ Blog or portfolio section
-✓ Contact form + Google Maps
-✓ Google Analytics setup
-✓ Speed optimization
-✓ SEO meta tags & sitemap
-✓ 3 rounds of revisions
-✓ 10–14 day delivery
+✓ Up to 8 pages
+✓ Logo + social setup
+✓ Photo gallery or menu section
+✓ Basic Wix store setup (small product list)
+✓ Help publishing live
+✓ 2–3 rounds of revisions
 
-Most popular choice for restaurants, agencies, coaches, and service businesses.
-```
-
-### Premium Package — E-commerce Store ($3,500)
-```
-Full online store ready to accept payments and sell products.
-
-INCLUDES:
-✓ Product catalog (up to 50 products)
-✓ Shopping cart & checkout
-✓ Payment integration (Stripe/PayPal)
-✓ Order confirmation emails
-✓ Mobile-optimized shopping
-✓ Inventory management basics
-✓ SEO for product pages
-✓ Admin training video
-✓ 14–21 day delivery
+I'll confirm scope in messages before you order.
 ```
 
 ---
 
 ## FAQ (add to each gig)
 
-**Q: Do I need to provide content?**
-A: Yes — text, logo, and images. I can use placeholders during design and swap in your content later. I can also recommend stock photo sources.
+**Q: How much experience do you have?**
+A: I'm 16 and newer to freelancing. I build on Wix and I'm upfront about what I can and can't do.
 
-**Q: Will I own the website?**
-A: Absolutely. You get full access, all files, and no lock-in. It's yours.
+**Q: Do you code websites from scratch?**
+A: No — I use Wix, which is perfect for simple business sites. For custom apps or complex builds, you'd need a senior developer.
 
-**Q: Do you offer revisions?**
-A: Yes. Each package includes revisions until you're happy with the design.
+**Q: Will I own the site?**
+A: Yes. It's on your Wix account. You keep access after we're done.
 
-**Q: Can you help with hosting?**
-A: Yes. I'll set up hosting on Netlify, Vercel, or your preferred provider and walk you through it.
-
-**Q: What if I need changes after launch?**
-A: I offer monthly maintenance packages, or you can hire me for one-off updates anytime.
+**Q: Do I pay Wix separately?**
+A: Usually yes — Wix has its own plan for hosting/publishing. I'll help you understand what you need.
 
 ---
 
 ## Tags / Keywords
-website development, business website, landing page, wordpress, responsive design, ecommerce website, web design, custom website, small business website, professional website
+wix website, small business website, logo design, wix designer, simple website, landing page, social media link, beginner web designer, affordable website

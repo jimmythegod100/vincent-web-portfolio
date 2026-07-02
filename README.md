@@ -1,35 +1,34 @@
-# Web Portfolio — Ready to Use
+# Web Portfolio — Vincent Martinez
 
 **Live site:** https://jimmythegod100.github.io/web-portfolio/
 
-Your portfolio is fully built — photos, project screenshots, about section, FAQ, pricing, testimonials, and a working contact form. No manual fill-in required.
+Honest portfolio for a 16-year-old Wix website builder — logos, social media setup, and simple front-end sites at beginner-friendly rates.
 
-## What's Live
+## What the site reflects
 
-| Section | Status |
-|---------|--------|
-| Hero + workspace photo | Done |
-| About + headshot | Done |
-| 6 project screenshots | Done |
-| Services, pricing, process | Done |
-| FAQ + tech stack | Done |
-| Contact form → your email | Done |
-| OG/social preview image | Done |
-| Platform profile copy (`profiles/`) | Done |
+| Topic | Approach |
+|-------|----------|
+| Experience | Young, newer freelancer — stated clearly |
+| Platform | Wix (not custom React/WordPress agency work) |
+| Services | Webpages, logos, social links, basic SEO |
+| Pricing | $50–$300 depending on scope |
+| Work section | **Example styles**, not fake client case studies |
+| Testimonials | Removed — replaced with "Why work with me" |
 
-## Contact Form
+## Contact
 
-Submissions go to **vincentmartinez9410@gmail.com** via FormSubmit. The first submission triggers a one-time activation email — click the link once and every future inquiry arrives automatically.
+- **Email:** vincentmartinez9410@gmail.com
+- **Form:** FormSubmit → same email (one-time activation on first submission)
 
-## Use on Client Platforms
+## Platform copy
 
-Copy-paste from these files — all include the live URL:
+Ready to paste into client platforms:
 
-- `profiles/upwork.md` — bio, skills, 6 portfolio entries
-- `profiles/fiverr.md` — gigs, packages, FAQ
-- `profiles/linkedin.md` — headline, about, featured link
+- `profiles/upwork.md`
+- `profiles/fiverr.md`
+- `profiles/linkedin.md`
 
-## Preview Locally
+## Preview locally
 
 ```bash
 cd ~/Projects/web-portfolio
@@ -37,18 +36,3 @@ python3 -m http.server 8080
 ```
 
 Open http://localhost:8080
-
-## Deploy URLs
-
-| Host | URL |
-|------|-----|
-| **GitHub Pages (primary)** | https://jimmythegod100.github.io/web-portfolio/ |
-| Netlify (optional) | Re-deploy with `npx netlify-cli deploy --prod --dir=.` after `netlify login` |
-
-## Next Steps (optional)
-
-- [x] Deploy to GitHub Pages
-- [x] Add images and full content
-- [x] Update profile files with live URL
-- [ ] Connect custom domain (yourname.com) via GitHub Pages or Netlify DNS
-- [ ] Add Google Analytics when you have a tracking ID
