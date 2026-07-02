@@ -39,7 +39,7 @@ PROCESS
 
 Let's talk about your project. Send me a message with your timeline, budget range, and what you're trying to achieve — I'll respond within 24 hours with a free quote.
 
-Portfolio: [ADD YOUR LIVE URL AFTER DEPLOYING]
+Portfolio: https://jimmythegod100.github.io/web-portfolio/
 ```
 
 ## Skills to Add

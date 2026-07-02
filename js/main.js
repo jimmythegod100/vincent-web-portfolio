@@ -21,13 +21,24 @@
   }
 
   const header = document.querySelector('.site-header');
-  let lastScroll = 0;
-
   window.addEventListener('scroll', () => {
     const current = window.scrollY;
     if (header) {
       header.style.boxShadow = current > 20 ? '0 4px 24px rgba(0,0,0,0.3)' : 'none';
     }
-    lastScroll = current;
   }, { passive: true });
+
+  const form = document.querySelector('.contact-form');
+  if (form) {
+    form.addEventListener('submit', () => {
+      const btn = form.querySelector('button[type="submit"]');
+      if (btn) {
+        btn.disabled = true;
+        btn.textContent = 'Sending…';
+      }
+    });
+  }
+
+  const yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 })();
