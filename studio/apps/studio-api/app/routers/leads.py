@@ -1,12 +1,9 @@
-from datetime import datetime, timezone
-
 from fastapi import APIRouter
 from pydantic import BaseModel, EmailStr, Field
 
-router = APIRouter(tags=["leads"])
+from app.db import list_leads, save_lead
 
-# In-memory store for local practice only — replace with Postgres later.
-_LEADS: list[dict] = []
+router = APIRouter(tags=["leads"])
 
 
 class LeadIn(BaseModel):
@@ -18,14 +15,16 @@ class LeadIn(BaseModel):
 
 @router.post("/leads")
 def create_lead(payload: LeadIn):
-    record = {
-        **payload.model_dump(),
-        "received_at": datetime.now(timezone.utc).isoformat(),
-    }
-    _LEADS.append(record)
+    record = save_lead(
+        payload.name,
+        payload.email,
+        payload.message,
+        payload.project_interest,
+    )
     return {"ok": True, "lead": record}
 
 
 @router.get("/leads")
-def list_leads():
-    return {"count": len(_LEADS), "leads": _LEADS}
+def get_leads():
+    leads = list_leads()
+    return {"count": len(leads), "leads": leads}

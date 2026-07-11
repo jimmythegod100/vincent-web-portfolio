@@ -55,6 +55,14 @@ Empty = section hidden automatically. **No pre-setup required** — fill URLs wh
 Personal skill: `~/.cursor/skills/static-portfolio-github-pages/SKILL.md`  
 Tell any agent: *"Use the static-portfolio-github-pages skill"* to rebuild without re-explaining.
 
+## Custom practice stack (iMac)
+
+For Docker + Python practice builds (not the default Wix client path), see `studio/`:
+
+- `studio/docs/DESIGN_PLAN.md`
+- `studio/docs/SETUP_IMAC.md`
+- `make showcase` → Valley Oak practice demo
+
 ## Repo
 
 https://github.com/jimmythegod100/vincent-web-portfolio

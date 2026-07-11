@@ -9,6 +9,6 @@ router = APIRouter(tags=["health"])
 def health():
     return {
         "status": "ok",
-        "client": "__CLIENT_SLUG__",
+        "client": "valley-oak",
         "storage": "postgres" if using_postgres() else "memory",
     }

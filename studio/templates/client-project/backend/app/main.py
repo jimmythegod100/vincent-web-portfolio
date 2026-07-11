@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from app.db import init_db
 from app.routers import contact, health
 
 app = FastAPI(
@@ -18,3 +19,8 @@ app.add_middleware(
 
 app.include_router(health.router)
 app.include_router(contact.router, prefix="/api")
+
+
+@app.on_event("startup")
+def on_startup():
+    init_db()

@@ -7,6 +7,7 @@ cd "$ROOT"
 
 echo "==> VM Web Studio — iMac bootstrap"
 echo "    Studio root: $ROOT"
+echo "    Expected repo: vincent-web-portfolio (or local clone)"
 echo
 
 need_brew() {
@@ -70,9 +71,10 @@ touch clients/.gitkeep
 echo
 echo "==> Done. Next steps on the iMac:"
 echo "    1. Start Docker Desktop (if using Docker)"
-echo "    2. cd $ROOT && make up"
-echo "    3. open http://localhost:8000/docs"
+echo "    2. cd $ROOT && make up && make smoke"
+echo "    3. make showcase   # http://localhost:8090"
 echo "    4. make new-client NAME=demo-brand"
 echo
 echo "Design plan:  docs/DESIGN_PLAN.md"
 echo "Setup guide:  docs/SETUP_IMAC.md"
+echo "Scope form:   docs/templates/SCOPE_CONTRACT.md"

@@ -55,7 +55,7 @@ Browser
 - **Frontend:** visual design (the “web design” clients see)
 - **Python (FastAPI):** forms, APIs, business rules — the “engine”
 - **Docker:** identical run environment on iMac → staging → host
-- **Postgres:** only when the site needs stored data (leads, bookings)
+- **Postgres:** optional via Compose `--profile db` + `DATABASE_URL` (otherwise in-memory)
 - **Nginx:** one URL for site + API in production-like local runs
 
 ---
@@ -63,16 +63,17 @@ Browser
 ## 4. Repo layout
 
 ```
-web-portfolio/                 # public portfolio (unchanged role)
+vincent-web-portfolio/         # public portfolio
 ├── index.html …               # GitHub Pages site
 ├── profiles/                  # Upwork / Fiverr / LinkedIn copy
 └── studio/                    # iMac build + client factory
-    ├── docs/                  # plans & checklists
-    ├── scripts/               # bootstrap + new-client
+    ├── docs/                  # plans, checklists, scope contract
+    ├── scripts/               # bootstrap, new-client, smoke
     ├── templates/client-project/
-    ├── clients/               # real client clones (gitignored contents ok)
+    ├── showcase/valley-oak/   # committed practice demo
+    ├── clients/               # generated jobs (gitignored)
     ├── apps/studio-api/       # shared practice API
-    ├── docker-compose.yml     # studio-wide stack
+    ├── docker-compose.yml
     └── Makefile
 ```
 
@@ -80,13 +81,11 @@ web-portfolio/                 # public portfolio (unchanged role)
 
 ## 5. Design system (client frontends)
 
-Keep visual work intentional and non-generic:
-
-- **Typography:** pick one display + one body per brand (avoid Inter/Roboto/Arial defaults)
+- **Typography:** one display + one body per brand (avoid Inter/Roboto/Arial defaults)
 - **Atmosphere:** gradient or photo plane in the hero — not flat gray
 - **First viewport:** brand, one headline, one sentence, one CTA group, one dominant visual
 - **No hero cards / floating badges** unless the brand already uses them
-- **Motion:** 2–3 purposeful animations (entrance, hover, scroll) — not noise
+- **Motion:** 2–3 purposeful animations (entrance, hover, scroll reveal)
 - **Responsive:** desktop + mobile from day one
 
 Wireframes before Wix or before code: sketch → approve with client → build.
@@ -95,13 +94,14 @@ Wireframes before Wix or before code: sketch → approve with client → build.
 
 ## 6. iMac workflow (day to day)
 
-1. Open Cursor on the iMac → `~/Projects/web-portfolio`
+1. Open Cursor on the iMac → `~/Projects/vincent-web-portfolio`
 2. Start studio stack: `cd studio && make up`
-3. New custom job: `make new-client NAME=acme-co`
-4. Design in `clients/acme-co/frontend/`
-5. API work in `clients/acme-co/backend/`
-6. Preview: http://localhost:8088 (compose maps ports per project)
-7. Ship: static → Netlify/GitHub Pages; full stack → host that supports Docker
+3. Smoke test: `make smoke`
+4. New custom job: `make new-client NAME=acme-co`
+5. Design in `clients/acme-co/frontend/`
+6. Optional DB: set `DATABASE_URL` + `make up-db` (or client `docker compose --profile db up`)
+7. Showcase demo: `make showcase` → http://localhost:8090
+8. Ship: static → Netlify/GitHub Pages; full stack → host that supports Docker
 
 Wix jobs stay outside Docker — use the browser + Wix editor as today.
 
@@ -109,13 +109,13 @@ Wix jobs stay outside Docker — use the browser + Wix editor as today.
 
 ## 7. Phased rollout
 
-| Phase | When | Deliverable |
-|-------|------|-------------|
-| **0** | Now | Studio folders, configs, iMac bootstrap script |
-| **1** | This week | Run `bootstrap-imac.sh` on iMac; `make up` succeeds |
-| **2** | Practice | One demo site from template (your own fictional brand) |
-| **3** | Portfolio update | Add “Custom practice builds” only after demo looks good |
-| **4** | Paid Tier B | First real custom client under a clear scope contract |
+| Phase | Status | Deliverable |
+|-------|--------|-------------|
+| **0** | Done | Studio folders, configs, iMac bootstrap script |
+| **1** | Ready on iMac | `bootstrap-imac.sh` + `make up` + `make smoke` |
+| **2** | Done | Showcase: `studio/showcase/valley-oak` |
+| **3** | Done | Portfolio `#practice` section (honest labeling) |
+| **4** | Template ready | Scope contract in `docs/templates/SCOPE_CONTRACT.md` |
 
 ---
 
@@ -124,7 +124,7 @@ Wix jobs stay outside Docker — use the browser + Wix editor as today.
 | Asset | Rough size | Keep on iMac |
 |-------|------------|--------------|
 | Docker images (Python, Nginx, Postgres) | 2–6 GB | Yes |
-| Per-client `node_modules` / build cache | 200–800 MB | Yes |
+| Per-client build cache | 200–800 MB | Yes |
 | Client photos / video | varies | Yes (`clients/*/assets`) |
 | Portfolio static site | tiny | Sync both machines via git |
 
@@ -134,15 +134,18 @@ MacBook: git pull + edit docs/HTML. Heavy `docker compose build` → iMac.
 
 ## 9. Success criteria
 
-- [ ] iMac has Docker (or Podman) + Python 3.12+ + Node 20+ + Git + gh
-- [ ] `studio/make up` serves the practice API health check
-- [ ] `make new-client NAME=demo` creates a runnable project
-- [ ] One demo frontend matches the design rules in §5
-- [ ] Secrets only in `.env` (never committed)
+- [x] Studio structure + bootstrap in repo
+- [x] Showcase demo matches design rules (§5)
+- [x] Portfolio practice section (honest, not sold as client work)
+- [x] Optional Postgres persistence path
+- [x] Healthchecks + smoke script
+- [x] Scope contract + handoff templates
+- [ ] iMac has Docker Desktop + Python 3.12+ + Node + Git + gh
+- [ ] `make up` + `make smoke` green on iMac
 
 ---
 
-## 10. Out of scope (for now)
+## 10. Out of scope (still)
 
 - Electron wrappers, Toptal/Gun.io positioning
 - Claiming enterprise Python chops on public profiles

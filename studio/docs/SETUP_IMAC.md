@@ -2,6 +2,8 @@
 
 Run this on the **iMac** (primary build machine). MacBook can stay light: Git + Cursor + browser.
 
+**Repo path on disk:** `~/Projects/vincent-web-portfolio` (or `web-portfolio` if that is your local clone name)
+
 ## 1. Install checklist
 
 | Software | Purpose | Install |
@@ -15,7 +17,7 @@ Run this on the **iMac** (primary build machine). MacBook can stay light: Git + 
 | **Cursor** | Coding | Already in use |
 | **PostgreSQL client** (optional) | Inspect DB | `brew install libpq` |
 
-**Alternative to Docker Desktop:** Podman (`brew install podman`) — already present on some machines; Docker Desktop is simpler for learning.
+**Alternative to Docker Desktop:** Podman (`brew install podman`) — Docker Desktop is simpler for learning.
 
 ### Disk budget (plan for)
 
@@ -25,10 +27,8 @@ Run this on the **iMac** (primary build machine). MacBook can stay light: Git + 
 
 ## 2. One-command bootstrap
 
-On the iMac, after cloning this repo:
-
 ```bash
-cd ~/Projects/web-portfolio/studio
+cd ~/Projects/vincent-web-portfolio/studio
 chmod +x scripts/*.sh
 ./scripts/bootstrap-imac.sh
 ```
@@ -38,29 +38,32 @@ The script installs missing Homebrew packages, checks Docker, copies `.env.examp
 ## 3. First run
 
 ```bash
-cd ~/Projects/web-portfolio/studio
+cd ~/Projects/vincent-web-portfolio/studio
 make up
-curl -s http://localhost:8000/health
-# expect: {"status":"ok"}
+make smoke
+# API docs: http://localhost:8000/docs
 ```
 
-Practice API docs: http://localhost:8000/docs
+### Optional Postgres for studio API
 
-## 4. New client project from template
+1. In `.env` set:  
+   `DATABASE_URL=postgresql+psycopg://studio:studio_dev_change_me@db:5432/studio`
+2. `make up-db`
+
+## 4. Showcase + new client
 
 ```bash
+make showcase
+# http://localhost:8090
+
 make new-client NAME=sunrise-bakery
 cd clients/sunrise-bakery
 docker compose up --build
-# site: http://localhost:8088
-# api:  http://localhost:8001/docs
 ```
 
-## 5. Cursor / editor settings (optional)
+## 5. Cursor recommendations
 
-- Open folder: `~/Projects/web-portfolio` (whole repo)
-- Python interpreter: Homebrew 3.12+
-- Enable Docker extension if you use VS Code/Cursor Docker UI
+Open the whole repo. Suggested extensions live in `studio/.vscode/extensions.json` (Python, Docker).
 
 ## 6. Secrets
 
@@ -71,13 +74,12 @@ docker compose up --build
 ## 7. Sync with MacBook
 
 ```bash
-# on either machine
 git pull
 git push
 ```
 
-Do **not** sync Docker volumes or `node_modules` via iCloud — only git.
+Do **not** sync Docker volumes via iCloud — only git.
 
 ## 8. Wix work (unchanged)
 
-No Docker required. Use Chrome/Safari + Wix editor. Portfolio marketing copy stays in `profiles/`.
+No Docker required. Portfolio marketing copy stays in `profiles/`.

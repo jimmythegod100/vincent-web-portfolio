@@ -3,7 +3,7 @@
 Use once per custom (Tier B) project. Skip for pure Wix jobs.
 
 ## Kickoff
-- [ ] Written scope (pages, features, revisions, timeline, price)
+- [ ] Written scope (use `docs/templates/SCOPE_CONTRACT.md`)
 - [ ] Brand assets received (logo, colors, fonts, photos)
 - [ ] Domain / hosting plan agreed
 - [ ] `make new-client NAME=...` created on iMac
@@ -24,7 +24,8 @@ Use once per custom (Tier B) project. Skip for pure Wix jobs.
 - [ ] Client preview link shared
 - [ ] Forms tested end-to-end
 - [ ] DNS / hosting pointed
-- [ ] Handoff notes: how to edit content, who hosts, backup
+- [ ] `HANDOFF.md` filled and shared
+- [ ] `make smoke` (or project health URL) checked
 
 ## Aftercare
 - [ ] Invoice sent

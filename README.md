@@ -53,6 +53,7 @@ Primary build machine: **iMac** (storage + Docker). See:
 
 - [studio/docs/DESIGN_PLAN.md](studio/docs/DESIGN_PLAN.md) — architecture & design rules
 - [studio/docs/SETUP_IMAC.md](studio/docs/SETUP_IMAC.md) — software install checklist
-- [studio/README.md](studio/README.md) — quick start (`bootstrap-imac.sh`, `make up`, `make new-client`)
+- [studio/showcase/valley-oak/](studio/showcase/valley-oak/) — practice demo (Valley Oak)
+- [studio/README.md](studio/README.md) — `bootstrap-imac.sh`, `make up`, `make smoke`, `make showcase`, `make new-client`
 
 Wix client work stays on the public portfolio path above; the studio is for learning and future custom builds.

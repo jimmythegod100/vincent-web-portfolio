@@ -8,12 +8,18 @@ services:
     env_file:
       - .env
     environment:
-      - STUDIO_ENV=${STUDIO_ENV:-development}
+      STUDIO_ENV: ${STUDIO_ENV:-development}
+      DATABASE_URL: ${DATABASE_URL:-}
     volumes:
       - ./apps/studio-api/app:/app/app
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 8
+      start_period: 12s
     restart: unless-stopped
 
-  # Optional — start with: docker compose --profile db up
   db:
     image: postgres:16-alpine
     profiles: ["db"]
@@ -25,6 +31,11 @@ services:
       - "${POSTGRES_PORT:-5432}:5432"
     volumes:
       - studio_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 10s
+      timeout: 5s
+      retries: 8
     restart: unless-stopped
 
 volumes:
